@@ -59,14 +59,14 @@ We encourage you to include links to the relevant guidance in your software.
 
 Agents must create, or already have, an [HMRC online services for agents account](https://www.gov.uk/government/collections/hmrc-online-services-for-agents#HMRC-online-services-for-agents-account) before they can use the service. This also gives them access to other services for agents.
 
-They can do this on GOV.UK at [HMRC services: sign in or register](https://www.gov.uk/log-in-register-hmrc-online-services). We encourage you to include this link in your software.
+They do this on GOV.UK at [HMRC services: sign in or register](https://www.gov.uk/log-in-register-hmrc-online-services). We encourage you to include this link in your software.
 
 
 ## Create an HMRC online account
 
 Individuals must create, or already have, an HMRC online account before they can use the service. This also gives them access to their Personal Tax Account.
 
-They can do this on GOV.UK at [HMRC services: sign in or register](https://www.gov.uk/log-in-register-hmrc-online-services). We encourage you to include this link in your software.
+They do this on GOV.UK at [HMRC services: sign in or register](https://www.gov.uk/log-in-register-hmrc-online-services). We encourage you to include this link in your software.
 
 
 ## Register for Self Assessment for Agents
@@ -82,14 +82,14 @@ Individuals must register for Self Assessment before they can use this service.
 
 Individuals with agents must also register for Self Assessment themselves - the agent cannot do it for them.
 
-They can do this on GOV.UK via their Personal Tax Account, which they can access at [HMRC services: sign in or register](https://www.gov.uk/log-in-register-hmrc-online-services). We encourage you to include this link in your software.
+They do this on GOV.UK via their Personal Tax Account, which they access at [HMRC services: sign in or register](https://www.gov.uk/log-in-register-hmrc-online-services). We encourage you to include this link in your software.
 
 
 ## Authorise agent
 
 Agents must obtain authorisation from their clients to act on their behalf before they can use this service.
 
-They can do this on GOV.UK at [Agent authorisation to deal with HMRC](https://www.gov.uk/guidance/client-authorisation-an-overview). We encourage you to include this link in your software.
+They do this on GOV.UK at [Agent authorisation to deal with HMRC](https://www.gov.uk/guidance/client-authorisation-an-overview). We encourage you to include this link in your software.
 
 
 ## Choose software
@@ -103,17 +103,19 @@ Agents and individuals using your software to connect to the Self Assessment API
 
 Because the pre-population APIs and the submission API use different technology, the linking process is different for each.
 
-### Link software to HMRC for pre-population APIs
+Because the APIs to help complete a return and the API to submit a return use different technology, the linking process is different for each.
 
-For the pre-population APIs, we use the open standard OAuth 2.0. This involves the agent or individual signing in to their HMRC online account and following our grant authority user journey.
+### Help complete a Self Assessment return
+
+We use the open standard OAuth 2.0. This involves the agent or individual signing in to their HMRC online account and following our grant authority user journey.
 
 We then generate an access token for the user, which the software must include in subsequent API requests.
 
 For more details see [Authorisation - user restricted endpoints](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/user-restricted-endpoints).
  
-### Link software to HMRC for submission API
+### Submit a Self Assessment return
 
-For the submission API, the agent or individual enters their HMRC online account user ID and password directly into their software.
+The agent or individual enters their HMRC online account user ID and password directly into their software.
 
 The software must pass them in subsequent API requests as explained in [Transaction Engine: Document Submission Protocol](https://www.gov.uk/government/publications/transaction-engine-document-submission-protocol).
 
@@ -124,7 +126,7 @@ This step is optional.
 
 The individual or agent’s software can get details from HMRC to help complete some parts of the tax return.
 
-The software can do this by calling one or more of the following APIs:
+The software does this by calling one or more of the following APIs:
 
 * [Individual PAYE API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-paye) - recommended for PAYE data, but currently in private beta and will eventually replace the following four Individual APIs
 * [Individual Benefits API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-benefits)
@@ -136,8 +138,8 @@ The software can do this by calling one or more of the following APIs:
 
 Each API returns either the requested data or an appropriate error response. The most common errors are:
 
-* No data found for the given individual and tax year
-* End user not authorised for the given individual, for example an agent without client authorisation
+* no data found for the given individual and tax year
+* end user not authorised for the given individual, for example an agent without client authorisation
 
 For more details see the above API documentation.
 
@@ -155,9 +157,8 @@ Once they have completed the Self Assessment return in their software, the indiv
 
 Individuals and agents can get help and support via the following channels:
 
-* You as their software supplier
-* The “Get help with this page” link on relevant pages in the grant authority journey - for help with signing in, 2-step verification, identity checks and granting authority
-* The [HMRC Online Services Helpdesk](https://www.gov.uk/government/organisations/hm-revenue-customs/contact/online-services-helpdesk) - for help with technical queries that the software supplier can’t resolve
-* The [HMRC Income Tax Helpline](https://www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-enquiries-for-individuals-pensioners-and-employees) - for individuals querying the data received from HMRC
-* The [HMRC Agent Dedicated Line](https://www.gov.uk/government/organisations/hm-revenue-customs/contact/agent-dedicated-line-self-assessment-or-paye-for-individuals) - for agents querying the data received from HMRC
- 
+* you as their software supplier
+* the “Get help with this page” link on relevant pages in the grant authority journey - for help with signing in, 2-step verification, identity checks and granting authority
+* the [HMRC Online Services Helpdesk](https://www.gov.uk/government/organisations/hm-revenue-customs/contact/online-services-helpdesk) - for help with technical queries that the software supplier can’t resolve
+* the [HMRC Income Tax Helpline](https://www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-enquiries-for-individuals-pensioners-and-employees) - for individuals querying the data received from HMRC
+* the [HMRC Agent Dedicated Line](https://www.gov.uk/government/organisations/hm-revenue-customs/contact/agent-dedicated-line-self-assessment-or-paye-for-individuals) - for agents querying the data received from HMRC
