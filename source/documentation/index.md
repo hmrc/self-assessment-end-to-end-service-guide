@@ -9,32 +9,62 @@ description: Software developers, designers, product owners or business analysts
 Version 1.0 issued D Month YYYY
 ***
 
-This guide explains how you can integrate your software with our APIs to submit VAT returns under Making Tax Digital for VAT. It shows how the APIs fit into various end-to-end user journeys. It is intended to help software developers, designers, product owners or business analysts understand how your software needs to interact with HMRC systems.
+This guide explains how you can integrate your software with our APIs to help complete and submit
+[Self Assessment](https://www.gov.uk/self-assessment-tax-returns) returns.
+It shows how the APIs fit into various end-to-end user journeys.
+
+The intended audience is software developers, designers, product owners and business analysts.
+
+The user journeys in this guide are only examples - other use cases are also possible.
+
+This guide relates to the annual Self Assessment process, not the [Making Tax Digital quarterly Income Tax process](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax).
+
 
 ## Overview
 
-VAT (MTD) requires VAT registered businesses with taxable turnover above the VAT registration threshold to:
+[Self Assessment](https://www.gov.uk/self-assessment-tax-returns) is a system we use to collect Income Tax.
 
-* keep records in digital form
-* file their VAT Returns using software (via our [VAT (MTD) API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/vat-api/))
+Tax is usually deducted automatically from wages, pensions and savings via Pay As You Earn (PAYE). People and businesses with other income must report it in a Self Assessment tax return.
 
-The frequency of submitting a VAT Return (annually, quarterly or monthly) does not change under MTD.
+Some people and businesses submit their own Self Assessment return. Others have an agent who submits it on their behalf.
 
-For more details see [VAT Notice 700/22](https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat). In particular, [section 7](https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat/vat-notice-70022-making-tax-digital-for-vat#examples-of-where-a-digital-link-is-required) shows the various options for software integration.
+It is possible to submit Self Assessment returns using commercial software. To support this, we provide APIs to:
+
+* get details from us to help complete a Self Assessment return
+* submit a Self Assessment return
+
+To use these APIs, the end user must:
+
+* be an individual or an agent
+* be registered for Self Assessment as an individual or an agent
+* have an appropriate HMRC online account
+
 
 ## End-to-end user journeys
 
-These journeys show examples of use. Journeys for businesses and agents are broken down into:
+These journeys show examples of how to use the APIs:
 
-  * [VAT (MTD) set up activities](documentation/set-up.html#set-up)
-  * [retrieving VAT (MTD) obligations, submitting returns and paying bills](documentation/obligations.html#obligations-and-returns)
-  * [paying VAT (MTD) penalties and interest or appealing](documentation/penalties.html#penalties-and-appeals)
-  * [VAT (MTD) close down activities](documentation/close-down.html#close-down)
+* [Agent submits a client’s Self Assessment return](#)
+* [Individual submits their own Self Assessment return](#)
+
+These journeys are only examples - other use cases are also possible.
+
 
 ## Related API documentation
 
-  * [VAT (MTD) REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/vat-api/1.0)
-  * [Create Test User API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0)
+### Help complete a Self Assessment return
+
+* Individual PAYE API - currently in private beta
+* Individual Benefits API
+* Individual Employment API
+* Individual Income API
+* Individual Tax API
+* National Insurance API
+* Marriage Allowance API
+
+### Submit a Self Assessment return
+
+* Self Assessment Online XML API
 
 ## Changelog
 
@@ -44,5 +74,4 @@ D Month YYYY
 
 What changed:
 
-* [Added documentation for Retrieve VAT liabilities endpoint](documentation/obligations.html#view-vat-liabilities)
-* [Added documentation for Retrieve VAT payments endpoint](documentation/obligations.html#view-vat-payments)
+* Guide first issued
