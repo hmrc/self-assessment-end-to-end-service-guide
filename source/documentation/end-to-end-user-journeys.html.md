@@ -42,14 +42,14 @@ Agents and individuals can learn about Self Assessment via software by reading g
 For agents:
 
 * [Self Assessment for Agents: HMRC online services](https://www.gov.uk/guidance/self-assessment-for-agents-online-service)
-* [Self Assessment commercial software suppliers](https://www.gov.uk/government/publications/self-assessment-commercial-software-suppliers/self-assessment-online-commercial-software-suppliers)
+* [Self Assessment commercial software suppliers](https://www.gov.uk/government/publications/self-assessment-commercial-software-suppliers)
 * [Use software to help complete your client’s Self Assessment tax return](https://www.gov.uk/guidance/use-software-to-help-complete-your-clients-self-assessment-tax-return)
 
 For individuals:
 
 * [Self Assessment tax returns](https://www.gov.uk/self-assessment-tax-returns)
 * [Register for and file your Self Assessment tax return](https://www.gov.uk/log-in-file-self-assessment-tax-return)
-* [Self Assessment commercial software suppliers](https://www.gov.uk/government/publications/self-assessment-commercial-software-suppliers/self-assessment-online-commercial-software-suppliers)
+* [Self Assessment commercial software suppliers](https://www.gov.uk/government/publications/self-assessment-commercial-software-suppliers)
 * [Use software to help complete your Self Assessment tax return](https://www.gov.uk/guidance/use-software-to-help-complete-your-self-assessment-tax-return)
 
 We encourage you to include links to the relevant guidance in your software.
@@ -57,7 +57,7 @@ We encourage you to include links to the relevant guidance in your software.
 
 ## Create an HMRC online services for agents account
 
-Agents must create, or already have, an [HMRC online services for agents account](https://www.gov.uk/government/collections/hmrc-online-services-for-agents#HMRC-online-services-for-agents) before they can use the service. This also gives them access to other services for agents.
+Agents must create, or already have, an [HMRC online services for agents account](https://www.gov.uk/government/collections/hmrc-online-services-for-agents#HMRC-online-services-for-agents-account) before they can use the service. This also gives them access to other services for agents.
 
 They can do this on GOV.UK at [HMRC services: sign in or register](https://www.gov.uk/log-in-register-hmrc-online-services). We encourage you to include this link in your software.
 
@@ -136,8 +136,8 @@ The software can do this by calling one or more of the following APIs:
 
 Each API returns either the requested data or an appropriate error response. The most common errors are:
 
-# No data found for the given individual and tax year
-# End user not authorised for the given individual, for example an agent without client authorisation
+* No data found for the given individual and tax year
+* End user not authorised for the given individual, for example an agent without client authorisation
 
 For more details see the above API documentation.
 
