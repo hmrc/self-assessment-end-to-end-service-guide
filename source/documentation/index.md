@@ -45,7 +45,7 @@ To use these APIs, the end user must:
 These journeys show examples of how to use the APIs:
 
 * [Agent submits a client’s Self Assessment return](documentation/end-to-end-user-journeys.html#agent-journey-overview)
-* [Individual submits their own Self Assessment return](documentation/end-to-end-user-journeys.html#business-journey-overview)
+* [Individual submits their own Self Assessment return](documentation/end-to-end-user-journeys.html#individual-journey-overview)
 
 These journeys are only examples - other use cases are also possible.
 
