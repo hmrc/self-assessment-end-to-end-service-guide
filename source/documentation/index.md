@@ -44,8 +44,8 @@ To use these APIs, the end user must:
 
 These journeys show examples of how to use the APIs:
 
-* [Agent submits a client’s Self Assessment return](#)
-* [Individual submits their own Self Assessment return](#)
+* [Agent submits a client’s Self Assessment return](documentation/end-to-end-user-journeys.html#agent-journey-overview)
+* [Individual submits their own Self Assessment return](documentation/end-to-end-user-journeys.html#business-journey-overview)
 
 These journeys are only examples - other use cases are also possible.
 
@@ -54,17 +54,17 @@ These journeys are only examples - other use cases are also possible.
 
 ### Help complete a Self Assessment return
 
-* Individual PAYE API - currently in private beta
-* Individual Benefits API
-* Individual Employment API
-* Individual Income API
-* Individual Tax API
-* National Insurance API
-* Marriage Allowance API
+* [Individual PAYE API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-paye) - currently in private beta
+* [Individual Benefits API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-benefits)
+* [Individual Employment API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-employment)
+* [Individual Income API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-income)
+* [Individual Tax API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-tax)
+* [National Insurance API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/national-insurance)
+* [Marriage Allowance API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/marriage-allowance)
 
 ### Submit a Self Assessment return
 
-* Self Assessment Online XML API
+* [Self Assessment Online XML API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/xml/Self%20Assessment%20Online)
 
 ## Changelog
 
