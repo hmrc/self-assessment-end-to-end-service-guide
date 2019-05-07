@@ -101,8 +101,6 @@ We provide [a list of Self Assessment software applications](https://www.gov.uk/
 
 Agents and individuals using your software to connect to the Self Assessment APIs must grant authority to your software to interact with HMRC on their behalf.
 
-Because the pre-population APIs and the submission API use different technology, the linking process is different for each.
-
 Because the APIs to help complete a return and the API to submit a return use different technology, the linking process is different for each.
 
 ### Help complete a Self Assessment return
@@ -128,7 +126,7 @@ The individual or agent’s software can get details from HMRC to help complete 
 
 The software does this by calling one or more of the following APIs:
 
-* [Individual PAYE API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-paye) - recommended for PAYE data, but currently in private beta and will eventually replace the following four Individual APIs
+* [Individual PAYE API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-paye) - recommended for PAYE data, but is currently in private beta and will eventually replace the following four Individual APIs
 * [Individual Benefits API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-benefits)
 * [Individual Employment API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-employment)
 * [Individual Income API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-income)
