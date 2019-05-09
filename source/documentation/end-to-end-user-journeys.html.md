@@ -10,13 +10,13 @@ weight: 2
 Agents can use software to help complete and submit a client’s Self Assessment return.
 
 1. [Agent reads guidance](#read-guidance)
-2. [Agent creates an HMRC online services for agents account](#create-an-hmrc-online-services-for-agents-account)
-3. [Agent registers for Self Assessment for Agents](#register-for-self-assessment-for-agents)
+2. [Agent registers for Self Assessment for Agents](#register-for-self-assessment-for-agents)
+3. [Agent creates an HMRC online services for agents account](#create-an-hmrc-online-services-for-agents-account)
 4. [Client registers for Self Assessment](#register-for-self-assessment)
 5. [Client authorises agent to act on their behalf](#authorise-agent)
 6. [Agent chooses software](#choose-software)
 7. [Agent links software to HMRC](#link-software-to-hmrc)
-8. [Agent gets details from HMRC to help complete client’s Self Assessment return](#get-details-from-hmrc-to-help-complete-self-assessment-return) (optional)
+8. [Agent gets data from HMRC to help complete client’s Self Assessment return](#get-data-from-hmrc-to-help-complete-self-assessment-return)
 9. [Agent completes and submits client’s Self Assessment return](#complete-and-submit-self-assessment-return)
 10. [Agent gets help and support](#get-help-and-support)
 
@@ -30,7 +30,7 @@ Individuals can use software to help complete and submit their own Self Assessme
 3. [Individual registers for Self Assessment](#register-for-self-assessment)
 4. [Individual chooses software](#choose-software)
 5. [Individual links software to HMRC](#link-software-to-hmrc)
-6. [Individual gets details from HMRC to help complete their Self Assessment return](#get-details-from-hmrc-to-help-complete-self-assessment-return) (optional)
+6. [Individual gets data from HMRC to help complete their Self Assessment return](#get-data-from-hmrc-to-help-complete-self-assessment-return)
 7. [Individual completes and submits their Self Assessment return](#complete-and-submit-self-assessment-return)
 8. [Individual gets help and support](#get-help-and-support)
 
@@ -47,6 +47,7 @@ For agents:
 
 For individuals:
 
+* [Self Assessment](https://www.gov.uk/topic/personal-tax/self-assessment) (index page)
 * [Self Assessment tax returns](https://www.gov.uk/self-assessment-tax-returns)
 * [Register for and file your Self Assessment tax return](https://www.gov.uk/log-in-file-self-assessment-tax-return)
 * [Self Assessment commercial software suppliers](https://www.gov.uk/government/publications/self-assessment-commercial-software-suppliers)
@@ -55,9 +56,18 @@ For individuals:
 We encourage you to include links to the relevant guidance in your software.
 
 
+## Register for Self Assessment for Agents
+
+Agents must register for Self Assessment for Agents before they can use this service. This is also known as getting an agent code - HMRC allocates the agent a Self Assessment agent code, in the format A12345.
+
+More details are given at [Self Assessment for Agents: HMRC online services](https://www.gov.uk/guidance/self-assessment-for-agents-online-service#how-to-get-an-agent-code). We encourage you to include this link in your software.
+
+
 ## Create an HMRC online services for agents account
 
 Agents must create, or already have, an [HMRC online services for agents account](https://www.gov.uk/government/collections/hmrc-online-services-for-agents#HMRC-online-services-for-agents-account) before they can use the service. This also gives them access to other services for agents.
+
+They must also enrol this account for Self Assessment for Agents, which links it to their Self Assessment agent code.
 
 They do this on GOV.UK at [HMRC services: sign in or register](https://www.gov.uk/log-in-register-hmrc-online-services). We encourage you to include this link in your software.
 
@@ -69,25 +79,18 @@ Individuals must create, or already have, an HMRC online account before they can
 They do this on GOV.UK at [HMRC services: sign in or register](https://www.gov.uk/log-in-register-hmrc-online-services). We encourage you to include this link in your software.
 
 
-## Register for Self Assessment for Agents
-
-Agents must register for Self Assessment for Agents before they can use this service. This is also known as getting an agent code.
-
-More details are given at [Self Assessment for Agents: HMRC online services](https://www.gov.uk/guidance/self-assessment-for-agents-online-service#how-to-get-an-agent-code). We encourage you to include this link in your software.
-
-
 ## Register for Self Assessment
 
-Individuals must register for Self Assessment before they can use this service.
+Individuals must register for Self Assessment before they can use this service. Once registered they get a Self Assessment Unique Taxpayer Reference (UTR).
 
-Individuals with agents must also register for Self Assessment themselves - the agent cannot do it for them.
+Agents' clients must also register for Self Assessment themselves - the agent cannot do it for them.
 
 They do this on GOV.UK via their Personal Tax Account, which they access at [HMRC services: sign in or register](https://www.gov.uk/log-in-register-hmrc-online-services). We encourage you to include this link in your software.
 
 
 ## Authorise agent
 
-Agents must obtain authorisation from their clients to act on their behalf before they can use this service.
+Agents must obtain authorisation from their clients to act on their behalf before they can use this service, for example using form 64-8.
 
 They do this on GOV.UK at [Agent authorisation to deal with HMRC](https://www.gov.uk/guidance/client-authorisation-an-overview). We encourage you to include this link in your software.
 
@@ -118,11 +121,9 @@ The agent or individual enters their HMRC online account user ID and password di
 The software must pass them in subsequent API requests as explained in [Transaction Engine: Document Submission Protocol](https://www.gov.uk/government/publications/transaction-engine-document-submission-protocol).
 
 
-## Get details from HMRC to help complete Self Assessment return
+## Get data from HMRC to help complete Self Assessment return
 
-This step is optional.
-
-The individual or agent’s software can get details from HMRC to help complete some parts of the tax return.
+The individual or agent’s software can get data from HMRC to help complete some parts of the tax return.
 
 The software does this by calling one or more of the following APIs:
 
