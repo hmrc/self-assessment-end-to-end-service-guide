@@ -6,7 +6,7 @@ description: Software developers, designers, product owners or business analysts
 
 # Self Assessment end-to-end service guide
 
-Version 1.0 issued D Month YYYY
+Version 1.0 issued 9 May 2019
 ***
 
 This guide explains how you can integrate your software with our APIs to help complete and submit
@@ -70,7 +70,7 @@ These journeys are only examples - other use cases are also possible.
 
 ### Version 1.0
 
-D Month YYYY
+9 May 2019
 
 What changed:
 
