@@ -58,7 +58,7 @@ We encourage you to include links to the relevant guidance in your software.
 
 ## Register for Self Assessment for Agents
 
-Agents must register for Self Assessment for Agents before they can use this service. This is also known as getting an agent code - HMRC allocates the agent a Self Assessment agent code, in the format A12345.
+Agents must register for, or already be registered for, Self Assessment for Agents before they can use this service. This is also known as getting an agent code - HMRC allocates the agent a Self Assessment agent code, in the format A12345.
 
 More details are given at [Self Assessment for Agents: HMRC online services](https://www.gov.uk/guidance/self-assessment-for-agents-online-service#how-to-get-an-agent-code). We encourage you to include this link in your software.
 
@@ -81,7 +81,7 @@ They do this on GOV.UK at [HMRC services: sign in or register](https://www.gov.u
 
 ## Register for Self Assessment
 
-Individuals must register for Self Assessment before they can use this service. Once registered they get a Self Assessment Unique Taxpayer Reference (UTR).
+Individuals must register for, or already be registered for, Self Assessment before they can use this service. Once registered they get a Self Assessment Unique Taxpayer Reference (UTR).
 
 Agents' clients must also register for Self Assessment themselves - the agent cannot do it for them.
 
