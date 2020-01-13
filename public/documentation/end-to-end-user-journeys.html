@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <title>End-to-end user journeys | Self Assessment End-to-End Service Guide | HMRC Developer Hub</title>
+
+    <!--[if gt IE 8]><!--><link href="/guides/self-assessment-end-to-end-service-guide/stylesheets/screen.css" rel="stylesheet" media="screen" /><!--<![endif]-->
+    <!--[if lte IE 8]><link href="/guides/self-assessment-end-to-end-service-guide/stylesheets/screen-old-ie.css" rel="stylesheet" media="screen" /><![endif]-->
+
+    <link rel="canonical" href="docs.developer.service.hmrc.gov.uk/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html">
+
+
+    <link href="/guides/self-assessment-end-to-end-service-guide/stylesheets/print.css" rel="stylesheet" media="print" />
+    <script src="/guides/self-assessment-end-to-end-service-guide/javascripts/application.js"></script>
+
+      <meta property="og:image" content="docs.developer.service.hmrc.gov.uk/images/govuk-large.png" />
+      <meta property="og:site_name" content="HMRC Developer Hub" />
+      <meta property="og:title" content="End-to-end user journeys | Self Assessment End-to-End Service Guide" />
+      <meta property="og:type" content="object" />
+      <meta property="og:url" content="docs.developer.service.hmrc.gov.uk/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html" />
+      <meta property="twitter:card" content="summary" />
+      <meta property="twitter:image" content="docs.developer.service.hmrc.gov.uk/images/govuk-large.png" />
+      <meta property="twitter:title" content="End-to-end user journeys | Self Assessment End-to-End Service Guide | HMRC Developer Hub" />
+      <meta property="twitter:url" content="docs.developer.service.hmrc.gov.uk/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html" />
+  </head>
+
+  <body>
+    <div class="app-pane">
+      <div class="app-pane__header toc-open-disabled">
+        <a href="#content" class="skip-link">Skip to main content</a>
+
+        <header class="header header--full-width">
+  <div class="header__container">
+    <div class="header__brand">
+        <a href="https://developer.service.hmrc.gov.uk/api-documentation">
+          <span class="govuk-logo">
+            <img class="govuk-logo__printable-crown" src="/images/gov.uk_logotype_crown_invert_trans.png" height="32" width="36" alt="">
+            GOV.UK
+          </span>
+        <span class="header__title">
+          HMRC Developer Hub
+        </span>
+        </a>
+    </div>
+
+      <div data-module="navigation">
+        <button type="button" class="header__navigation-toggle js-nav-toggle" aria-controls="navigation" aria-label="Show or hide top level navigation">Menu</button>
+
+        <nav id="navigation" class="header__navigation js-nav" aria-label="Top Level Navigation" aria-hidden="true">
+          <ul>
+              <li>
+                <a href="/guides/self-assessment-end-to-end-service-guide">Self Assessment end-to-end service guide</a>
+              </li>
+              <li>
+                <a href="/api-documentation/docs/using-the-hub">Documentation</a>
+              </li>
+              <li>
+                <a href="/developer/applications">Applications</a>
+              </li>
+              <li>
+                <a href="/developer/support">Support</a>
+              </li>
+          </ul>
+        </nav>
+      </div>
+  </div>
+</header>
+
+      </div>
+
+      <div id="toc-heading" class="toc-show fixedsticky">
+        <a href="#toc" class="toc-show__label js-toc-show" aria-controls="toc">
+          Table of contents <span class="toc-show__icon"></span>
+        </a>
+      </div>
+
+      <div class="app-pane__body" data-module="in-page-navigation">
+        <div class="app-pane__toc">
+          <div class="toc" data-module="table-of-contents">
+            
+            <a href="#" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></a>
+            <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading" data-module="collapsible-navigation">
+                    <ul>
+  <li>
+    <a href="/guides/self-assessment-end-to-end-service-guide/">Self Assessment end-to-end service guide</a>
+    <ul>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/#overview">Overview</a>
+      </li>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/#self-assessment-end-to-end-service-guide-end-to-end-user-journeys">End-to-end user journeys</a>
+      </li>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/#related-api-documentation">Related API documentation</a>
+      </li>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/#changelog">Changelog</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li>
+    <a href="/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html">End-to-end user journeys</a>
+    <ul>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html#agent-journey-overview">Agent journey overview</a>
+      </li>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html#individual-journey-overview">Individual journey overview</a>
+      </li>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html#read-guidance">Read guidance</a>
+      </li>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html#register-for-self-assessment-for-agents">Register for Self Assessment for Agents</a>
+      </li>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html#create-an-hmrc-online-services-for-agents-account">Create an HMRC online services for agents account</a>
+      </li>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html#create-an-hmrc-online-account">Create an HMRC online account</a>
+      </li>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html#register-for-self-assessment">Register for Self Assessment</a>
+      </li>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html#authorise-agent">Authorise agent</a>
+      </li>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html#choose-software">Choose software</a>
+      </li>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html#link-software-to-hmrc">Link software to HMRC</a>
+      </li>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html#get-data-from-hmrc-to-help-complete-self-assessment-return">Get data from HMRC to help complete Self Assessment return</a>
+      </li>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html#complete-and-submit-self-assessment-return">Complete and submit Self Assessment return</a>
+      </li>
+      <li>
+        <a href="/guides/self-assessment-end-to-end-service-guide/documentation/end-to-end-user-journeys.html#get-help-and-support">Get help and support</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+            </nav>
+          </div>
+        </div>
+
+        <div class="app-pane__content toc-open-disabled">
+          <main id="content" class="technical-documentation" data-module="anchored-headings">
+            <h1 id="end-to-end-user-journeys">End-to-end user journeys</h1>
+<h2 id="agent-journey-overview">Agent journey overview</h2>
+<p>Agents can use software to help complete and submit a client’s Self Assessment return.</p>
+
+<ol>
+<li><a href="#read-guidance" rel="noopener noreferrer">Agent reads guidance</a></li>
+<li><a href="#register-for-self-assessment-for-agents" rel="noopener noreferrer">Agent registers for Self Assessment for Agents</a></li>
+<li><a href="#create-an-hmrc-online-services-for-agents-account" rel="noopener noreferrer">Agent creates an HMRC online services for agents account</a></li>
+<li><a href="#register-for-self-assessment" rel="noopener noreferrer">Client registers for Self Assessment</a></li>
+<li><a href="#authorise-agent" rel="noopener noreferrer">Client authorises agent to act on their behalf</a></li>
+<li><a href="#choose-software" rel="noopener noreferrer">Agent chooses software</a></li>
+<li><a href="#link-software-to-hmrc" rel="noopener noreferrer">Agent links software to HMRC</a></li>
+<li><a href="#get-data-from-hmrc-to-help-complete-self-assessment-return" rel="noopener noreferrer">Agent gets data from HMRC to help complete client’s Self Assessment return</a></li>
+<li><a href="#complete-and-submit-self-assessment-return" rel="noopener noreferrer">Agent completes and submits client’s Self Assessment return</a></li>
+<li><a href="#get-help-and-support" rel="noopener noreferrer">Agent gets help and support</a></li>
+</ol>
+<h2 id="individual-journey-overview">Individual journey overview</h2>
+<p>Individuals can use software to help complete and submit their own Self Assessment return.</p>
+
+<ol>
+<li><a href="#read-guidance" rel="noopener noreferrer">Individual reads guidance</a></li>
+<li><a href="#create-an-hmrc-online-account" rel="noopener noreferrer">Individual creates an HMRC online account</a></li>
+<li><a href="#register-for-self-assessment" rel="noopener noreferrer">Individual registers for Self Assessment</a></li>
+<li><a href="#choose-software" rel="noopener noreferrer">Individual chooses software</a></li>
+<li><a href="#link-software-to-hmrc" rel="noopener noreferrer">Individual links software to HMRC</a></li>
+<li><a href="#get-data-from-hmrc-to-help-complete-self-assessment-return" rel="noopener noreferrer">Individual gets data from HMRC to help complete their Self Assessment return</a></li>
+<li><a href="#complete-and-submit-self-assessment-return" rel="noopener noreferrer">Individual completes and submits their Self Assessment return</a></li>
+<li><a href="#get-help-and-support" rel="noopener noreferrer">Individual gets help and support</a></li>
+</ol>
+<h2 id="read-guidance">Read guidance</h2>
+<p>Agents and individuals can learn about Self Assessment via software by reading guidance pages on GOV.UK.</p>
+<p>For agents:</p>
+
+<ul>
+<li><a href="https://www.gov.uk/guidance/self-assessment-for-agents-online-service" rel="noopener noreferrer">Self Assessment for Agents: HMRC online services</a></li>
+<li><a href="https://www.gov.uk/government/publications/self-assessment-commercial-software-suppliers" rel="noopener noreferrer">Self Assessment commercial software suppliers</a></li>
+<li><a href="https://www.gov.uk/guidance/use-software-to-help-complete-your-clients-self-assessment-tax-return" rel="noopener noreferrer">Use software to help complete your client’s Self Assessment tax return</a></li>
+</ul>
+<p>For individuals:</p>
+
+<ul>
+<li><a href="https://www.gov.uk/topic/personal-tax/self-assessment" rel="noopener noreferrer">Self Assessment</a> (index page)</li>
+<li><a href="https://www.gov.uk/self-assessment-tax-returns" rel="noopener noreferrer">Self Assessment tax returns</a></li>
+<li><a href="https://www.gov.uk/log-in-file-self-assessment-tax-return" rel="noopener noreferrer">Register for and file your Self Assessment tax return</a></li>
+<li><a href="https://www.gov.uk/government/publications/self-assessment-commercial-software-suppliers" rel="noopener noreferrer">Self Assessment commercial software suppliers</a></li>
+<li><a href="https://www.gov.uk/guidance/use-software-to-help-complete-your-self-assessment-tax-return" rel="noopener noreferrer">Use software to help complete your Self Assessment tax return</a></li>
+</ul>
+<p>We encourage you to include links to the relevant guidance in your software.</p>
+<h2 id="register-for-self-assessment-for-agents">Register for Self Assessment for Agents</h2>
+<p>Agents must register for, or already be registered for, Self Assessment for Agents before they can use this service. This is also known as getting an agent code - HMRC allocates the agent a Self Assessment agent code, in the format A12345.</p>
+<p>More details are given at <a href="https://www.gov.uk/guidance/self-assessment-for-agents-online-service#how-to-get-an-agent-code" rel="noopener noreferrer">Self Assessment for Agents: HMRC online services</a>. We encourage you to include this link in your software.</p>
+<h2 id="create-an-hmrc-online-services-for-agents-account">Create an HMRC online services for agents account</h2>
+<p>Agents must create, or already have, an <a href="https://www.gov.uk/government/collections/hmrc-online-services-for-agents#HMRC-online-services-for-agents-account" rel="noopener noreferrer">HMRC online services for agents account</a> before they can use the service. This also gives them access to other services for agents.</p>
+<p>They must also enrol this account for Self Assessment for Agents, which links it to their Self Assessment agent code.</p>
+<p>They do this on GOV.UK at <a href="https://www.gov.uk/log-in-register-hmrc-online-services" rel="noopener noreferrer">HMRC services: sign in or register</a>. We encourage you to include this link in your software.</p>
+<h2 id="create-an-hmrc-online-account">Create an HMRC online account</h2>
+<p>Individuals must create, or already have, an HMRC online account before they can use the service. This also gives them access to their Personal Tax Account.</p>
+<p>They do this on GOV.UK at <a href="https://www.gov.uk/log-in-register-hmrc-online-services" rel="noopener noreferrer">HMRC services: sign in or register</a>. We encourage you to include this link in your software.</p>
+<h2 id="register-for-self-assessment">Register for Self Assessment</h2>
+<p>Individuals must register for, or already be registered for, Self Assessment before they can use this service. Once registered they get a Self Assessment Unique Taxpayer Reference (UTR).</p>
+<p>Agents&rsquo; clients must also register for Self Assessment themselves - the agent cannot do it for them.</p>
+<p>They do this on GOV.UK via their Personal Tax Account, which they access at <a href="https://www.gov.uk/log-in-register-hmrc-online-services" rel="noopener noreferrer">HMRC services: sign in or register</a>. We encourage you to include this link in your software.</p>
+<h2 id="authorise-agent">Authorise agent</h2>
+<p>Agents must obtain authorisation from their clients to act on their behalf before they can use this service, for example using form 64-8.</p>
+<p>They do this on GOV.UK at <a href="https://www.gov.uk/guidance/client-authorisation-an-overview" rel="noopener noreferrer">Agent authorisation to deal with HMRC</a>. We encourage you to include this link in your software.</p>
+<h2 id="choose-software">Choose software</h2>
+<p>We provide <a href="https://www.gov.uk/government/publications/self-assessment-commercial-software-suppliers" rel="noopener noreferrer">a list of Self Assessment software applications</a> so agents and individuals can choose the right software for their needs.</p>
+<h2 id="link-software-to-hmrc">Link software to HMRC</h2>
+<p>Agents and individuals using your software to connect to the Self Assessment APIs must grant authority to your software to interact with HMRC on their behalf.</p>
+<p>Because the APIs to help complete a return and the API to submit a return use different technology, the linking process is different for each.</p>
+<h3 id="help-complete-a-self-assessment-return">Help complete a Self Assessment return</h3>
+<p>We use the open standard OAuth 2.0. This involves the agent or individual signing in to their HMRC online account and following our grant authority user journey.</p>
+<p>We then generate an access token for the user, which the software must include in subsequent API requests.</p>
+<p>For more details see <a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/user-restricted-endpoints" rel="noopener noreferrer">Authorisation - user restricted endpoints</a>.</p>
+<h3 id="submit-a-self-assessment-return">Submit a Self Assessment return</h3>
+<p>The agent or individual enters their HMRC online account user ID and password directly into their software.</p>
+<p>The software must pass them in subsequent API requests as explained in <a href="https://www.gov.uk/government/publications/transaction-engine-document-submission-protocol" rel="noopener noreferrer">Transaction Engine: Document Submission Protocol</a>.</p>
+<h2 id="get-data-from-hmrc-to-help-complete-self-assessment-return">Get data from HMRC to help complete Self Assessment return</h2>
+<p>The individual or agent’s software can get data from HMRC to help complete some parts of the tax return.</p>
+<p>The software does this by calling one or more of the following APIs:</p>
+
+<ul>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-paye" rel="noopener noreferrer">Individual PAYE API</a> - recommended for PAYE data, but is currently in private beta and will eventually replace the following four Individual APIs</li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-benefits" rel="noopener noreferrer">Individual Benefits API</a></li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-employment" rel="noopener noreferrer">Individual Employment API</a></li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-income" rel="noopener noreferrer">Individual Income API</a></li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-tax" rel="noopener noreferrer">Individual Tax API</a></li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/national-insurance" rel="noopener noreferrer">National Insurance API</a></li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/marriage-allowance" rel="noopener noreferrer">Marriage Allowance API</a></li>
+</ul>
+<p>Each API returns either the requested data or an appropriate error response. The most common errors are:</p>
+
+<ul>
+<li>no data found for the given individual and tax year</li>
+<li>end user not authorised for the given individual, for example an agent without client authorisation</li>
+</ul>
+<p>For more details see the above API documentation.</p>
+<p>To use these APIs, your application must comply with our <a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/terms-of-use" rel="noopener noreferrer">terms of use</a>. You must accept the terms of use before we issue your application’s production credentials.</p>
+<h2 id="complete-and-submit-self-assessment-return">Complete and submit Self Assessment return</h2>
+<p>Once they have completed the Self Assessment return in their software, the individual or agent submits it to us online. To do this, their software uses the following API:</p>
+
+<ul>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/xml/Self%20Assessment%20Online" rel="noopener noreferrer">Self Assessment Online XML API</a></li>
+</ul>
+<h2 id="get-help-and-support">Get help and support</h2>
+<p>Individuals and agents can get help and support via the following channels:</p>
+
+<ul>
+<li>you as their software supplier</li>
+<li>the “Get help with this page” link on relevant pages in the grant authority journey - for help with signing in, 2-step verification, identity checks and granting authority</li>
+<li>the <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/online-services-helpdesk" rel="noopener noreferrer">HMRC Online Services Helpdesk</a> - for help with technical queries that the software supplier can’t resolve</li>
+<li>the <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-enquiries-for-individuals-pensioners-and-employees" rel="noopener noreferrer">HMRC Income Tax Helpline</a> - for individuals querying the data received from HMRC</li>
+<li>the <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/agent-dedicated-line-self-assessment-or-paye-for-individuals" rel="noopener noreferrer">HMRC Agent Dedicated Line</a> - for agents querying the data received from HMRC</li>
+</ul>
+
+            
+          </main>
+
+
+          <footer class="footer">
+  <div class="footer__licence">
+    <a class="footer__licence-logo" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a>
+    <p class="footer__licence-description">All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+  </div>
+
+  <div class="footer__copyright">
+    <a class="footer__copyright-logo" href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+  </div>
+</footer>
+
+        </div>
+      </div>
+    </div>
+
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43414424-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'displayFeaturesTask', null);
+  ga('set', 'transport', 'beacon');
+  ga('set', 'page', location.pathname+location.search+location.hash);
+  ga('send', 'pageview');
+  </script>
+
+  </body>
+</html>
