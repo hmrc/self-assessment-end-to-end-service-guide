@@ -2,7 +2,7 @@ import play.sbt.PlayImport._
 import sbt._
 
 object AppDependencies {
-  val bootStrapPlayVersion = "6.2.0"
+  val bootStrapPlayVersion = "7.0.0"
   val silencerVersion = "1.7.9"
 
   val compile = Seq(

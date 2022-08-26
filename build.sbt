@@ -2,7 +2,7 @@ import uk.gov.hmrc.sbtdistributables.SbtDistributablesPlugin.publishingSettings
 
 val appName = "self-assessment-end-to-end-service-guide"
 
-scalaVersion := "2.12.15"
+scalaVersion := "2.12.16"
 
 lazy val microservice = Project(appName, file("."))
   .enablePlugins(play.sbt.PlayScala, SbtDistributablesPlugin)
