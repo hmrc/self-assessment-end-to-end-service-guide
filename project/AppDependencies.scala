@@ -2,7 +2,7 @@ import play.sbt.PlayImport._
 import sbt._
 
 object AppDependencies {
-  val bootStrapPlayVersion = "6.2.0"
+  val bootStrapPlayVersion = "7.1.0"
   val silencerVersion = "1.7.9"
 
   val compile = Seq(
@@ -14,5 +14,5 @@ object AppDependencies {
 
   val test = Seq(
     "com.vladsch.flexmark" % "flexmark-all" % "0.62.2" % Test,
-    "org.scalatest" %% "scalatest" % "3.2.12" % Test)
+    "org.scalatest" %% "scalatest" % "3.2.13" % Test)
 }
