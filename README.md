@@ -58,7 +58,7 @@ sbt run
 
 ### View the Service guide via Scala app
 
-The local URL and port where the files can be previewed will be output, this is normally http://localhost:9000/guides/self-assessment-end-to-end-service-guide/#overview.
+The local URL and port where the files can be previewed will be output, this is normally http://localhost:9000/guides/self-assessment-end-to-end-service-guide/.
 
 ## Updating the Ruby Gems
 

@@ -23,3 +23,5 @@ yarn-error.log
 .bsp
 /.batect
 public/
+/.bundle
+/vendor
