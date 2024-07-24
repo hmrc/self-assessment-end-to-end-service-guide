@@ -1,9 +1,7 @@
-val appName = "self-assessment-end-to-end-service-guide"
-
 ThisBuild / majorVersion := 0
 ThisBuild / scalaVersion := "2.13.14"
 
-lazy val microservice = Project(appName, file("."))
+lazy val microservice = Project("self-assessment-end-to-end-service-guide", file("."))
   .enablePlugins(PlayScala, SbtDistributablesPlugin)
   .settings(
     libraryDependencies ++= AppDependencies(),
@@ -11,4 +9,3 @@ lazy val microservice = Project(appName, file("."))
   )
 
 addCommandAlias("scalafmtAll", "all scalafmtSbt scalafmt Test/scalafmt")
-addCommandAlias("scalastyleAll", "all scalastyle Test/scalastyle")
