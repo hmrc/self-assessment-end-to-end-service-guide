@@ -8,7 +8,7 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
-    autoprefixer-rails (10.4.16.0)
+    autoprefixer-rails (10.4.19.0)
       execjs (~> 2)
     backports (3.25.0)
     chronic (0.10.2)
@@ -150,7 +150,7 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     redcarpet (3.5.1)
-    rexml (3.3.2)
+    rexml (3.3.4)
       strscan
     rouge (3.30.0)
     sass (3.4.25)
@@ -187,4 +187,4 @@ DEPENDENCIES
   wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.5.16
+   2.5.17
