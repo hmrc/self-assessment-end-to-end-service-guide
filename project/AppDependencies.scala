@@ -1,7 +1,7 @@
 import sbt.*
 
 object AppDependencies {
-  private lazy val bootstrapPlayVersion = "9.1.0"
+  private lazy val bootstrapPlayVersion = "9.5.0"
 
   private val compile: Seq[ModuleID] = Seq(
     "uk.gov.hmrc" %% "bootstrap-frontend-play-30" % bootstrapPlayVersion
@@ -12,4 +12,5 @@ object AppDependencies {
   ).map(_ % Test)
 
   def apply(): Seq[ModuleID]      = compile ++ test
+
 }
