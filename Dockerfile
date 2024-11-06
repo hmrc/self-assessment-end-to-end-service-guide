@@ -10,6 +10,7 @@ RUN cd /tmp && rbenv install
 RUN cd ~/.nodenv/plugins/node-build && git pull
 # Install version of Node that we want
 COPY .node-version /tmp
+# RUN nodenv install --list
 RUN cd /tmp && nodenv install
 
 # Make root accessible to other users, this is because the batect tasks run as the current user

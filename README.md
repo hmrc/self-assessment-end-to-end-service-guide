@@ -74,7 +74,12 @@ Edit `.ruby-version` with the required version of Ruby.
 
 ## Updating the Node version
 
-Edit `.node-version` with the required version of Node. Also, ensure that the version you specify in `.node-version` is the same as what is in the [build job](https://github.com/hmrc/build-jobs/blob/main/jobs/live/ddcelsSAPrePop.groovy#L143).
+- Uncomment list of valid versions in `Dockerfile` this line `# RUN nodenv install --list`
+- Run `./batect list-versions` to get the list of valid versions
+- in the output you will see a list of versions to choose from, you can use one as-is `X.Y.Z` in `.node-version`
+- and also the same version should be used in file `.nvmrc` but appending `v` to the version number `vX.Y.Z`
+- `.node-version` will be picked when building container
+- `.nvmrc` will be picked when running on jenkins build
 
 ## License
 
