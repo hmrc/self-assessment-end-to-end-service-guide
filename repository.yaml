@@ -1,4 +1,5 @@
 digital-service: SA Pre-pop / Self Assessment Pre-Population APIs
 description: This repository contains the source files that are used to generate the Self Assessment End-to-End Service Guide on the HMRC Developer Hub.
 repoVisibility: public_0C3F0CE3E6E6448FAD341E7BFA50FCD333E06A20CFF05FCACE61154DDBBADF71
-type: Other
+type: Service
+service-type: Frontend
