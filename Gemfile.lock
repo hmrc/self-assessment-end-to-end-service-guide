@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: https://artefacts.tax.service.gov.uk/artifactory/api/gems/gems/
   specs:
     activesupport (7.0.8.7)
       concurrent-ruby (~> 1.0, >= 1.0.2)
@@ -12,7 +12,7 @@ GEM
       execjs (~> 2)
     backports (3.25.1)
     base64 (0.3.0)
-    bigdecimal (3.2.3)
+    bigdecimal (3.2.2)
     chronic (0.10.2)
     chunky_png (1.4.0)
     coffee-script (2.4.1)
@@ -45,16 +45,12 @@ GEM
     execjs (2.10.0)
     fast_blank (1.0.1)
     fastimage (2.4.0)
-    ffi (1.17.2)
-    ffi (1.17.2-x86_64-darwin)
+    ffi (1.17.2-aarch64-linux-gnu)
     ffi (1.17.2-x86_64-linux-gnu)
-    google-protobuf (4.32.0)
+    google-protobuf (4.31.1-aarch64-linux-gnu)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.32.0-x86_64-darwin)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.32.0-x86_64-linux-gnu)
+    google-protobuf (4.31.1-x86_64-linux-gnu)
       bigdecimal
       rake (>= 13)
     govuk_tech_docs (5.1.0)
@@ -148,14 +144,10 @@ GEM
     middleman-syntax (3.6.1)
       middleman-core (>= 3.2)
       rouge (~> 3.2)
-    mini_portile2 (2.8.9)
     minitest (5.25.5)
     multi_json (1.17.0)
     mutex_m (0.3.0)
-    nokogiri (1.18.9)
-      mini_portile2 (~> 2.8.2)
-      racc (~> 1.4)
-    nokogiri (1.18.9-x86_64-darwin)
+    nokogiri (1.18.9-aarch64-linux-gnu)
       racc (~> 1.4)
     nokogiri (1.18.9-x86_64-linux-gnu)
       racc (~> 1.4)
@@ -178,15 +170,12 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     redcarpet (3.6.1)
-    rexml (3.4.3)
+    rexml (3.4.1)
     rouge (3.30.0)
     sass (3.4.25)
-    sass-embedded (1.92.1)
+    sass-embedded (1.89.2-aarch64-linux-gnu)
       google-protobuf (~> 4.31)
-      rake (>= 13)
-    sass-embedded (1.92.1-x86_64-darwin)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.92.1-x86_64-linux-gnu)
+    sass-embedded (1.89.2-x86_64-linux-gnu)
       google-protobuf (~> 4.31)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -215,8 +204,7 @@ GEM
     webrick (1.9.1)
 
 PLATFORMS
-  ruby
-  x86_64-darwin-23
+  aarch64-linux
   x86_64-linux
 
 DEPENDENCIES
@@ -226,4 +214,4 @@ DEPENDENCIES
   wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.5.3
+   2.4.1
