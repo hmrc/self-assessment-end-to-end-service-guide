@@ -3,7 +3,6 @@ title: Self Assessment End-to-End Service Guide
 weight: 1
 description: Software developers, designers, product owners or business analysts. Integrate your software with HMRC's Self Assessment APIs.
 ---
-<%= partial 'documentation/google_tag_manager_js' %>
 
 # Self Assessment end-to-end service guide
 
