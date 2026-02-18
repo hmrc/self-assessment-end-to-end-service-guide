@@ -15,7 +15,7 @@ It shows how the APIs fit into various end-to-end user journeys.
 
 The intended audience is software developers, designers, product owners and business analysts.
 
-The user journeys in this guide are only examples - other use cases are also possible.
+The user journeys in this guide are only examples. Other use cases are also possible.
 
 This guide relates to the annual Self Assessment process, not the [Making Tax Digital quarterly Income Tax process](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax).
 
