@@ -17,7 +17,7 @@ The intended audience is software developers, designers, product owners and busi
 
 The user journeys in this guide are only examples. Other use cases are also possible.
 
-This guide relates to the annual Self Assessment process, not the [Making Tax Digital quarterly Income Tax process](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax).
+This guide relates to the annual Self Assessment process, not Making Tax Digital for Income Tax.
 
 
 ## Overview
